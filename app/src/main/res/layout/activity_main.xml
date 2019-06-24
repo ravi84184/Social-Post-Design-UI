@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.nikdemo.socialpostdesignui.utils.customui.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Home"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_14ssp"
+                app:fontName="@string/font_lato_bold" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/_15sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/search_bg"
+            android:backgroundTint="#F1F1F1"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:orientation="horizontal"
+            android:padding="@dimen/_10sdp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_search" />
+
+            <com.nikdemo.socialpostdesignui.utils.customui.CustomEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:background="@android:color/transparent"
+                android:hint="Search here"
+                android:maxLines="1"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_14ssp"
+                app:fontName="@string/font_lato_bold" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.nikdemo.socialpostdesignui.utils.customui.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Popular"
+                    android:textColor="@color/purple"
+                    android:textSize="@dimen/_14ssp"
+                    app:fontName="@string/font_lato_bold" />
+
+                <RelativeLayout
+                    android:layout_width="@dimen/_5sdp"
+                    android:layout_height="@dimen/_5sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/circle_bg"
+                    android:backgroundTint="@color/purple" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <com.nikdemo.socialpostdesignui.utils.customui.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Following"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_14ssp"
+                    app:fontName="@string/font_lato_bold" />
+
+                <RelativeLayout
+                    android:layout_width="@dimen/_5sdp"
+                    android:layout_height="@dimen/_5sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/circle_bg"
+                    android:backgroundTint="@color/purple"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rl_feed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

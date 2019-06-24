@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp">
+
+            <RelativeLayout
+                android:id="@+id/rl_profile"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp">
+
+                <android.support.v7.widget.CardView
+                    app:cardCornerRadius="@dimen/_15sdp"
+                    app:cardElevation="0dp"
+                    app:cardPreventCornerOverlap="false"
+                    app:cardUseCompatPadding="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+
+                    <ImageView
+                        android:id="@+id/row_usr_img"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:src="@drawable/profile1" />
+                </android.support.v7.widget.CardView>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/_13sdp"
+                    android:layout_height="@dimen/_13sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/circle_bg_with_border" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:layout_toEndOf="@+id/rl_profile">
+
+                <com.nikdemo.socialpostdesignui.utils.customui.CustomTextView
+                    app:fontName="@string/font_lato_bold"
+                    android:id="@+id/row_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="center_vertical"
+                    android:text="devs.nik"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_16ssp" />
+
+                <com.nikdemo.socialpostdesignui.utils.customui.CustomTextView
+                    android:id="@+id/row_time"
+                    app:fontName="@string/font_lato_regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:text="4 hours ago"
+                    android:textSize="@dimen/_10ssp" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.CardView
+            app:cardCornerRadius="@dimen/_10sdp"
+            app:cardElevation="@dimen/_5sdp"
+            app:cardPreventCornerOverlap="false"
+            app:cardUseCompatPadding="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/row_post"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_200sdp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/a" />
+        </android.support.v7.widget.CardView>
+
+        <com.nikdemo.socialpostdesignui.utils.customui.CustomTextView
+            android:id="@+id/row_description"
+            app:fontName="@string/font_lato_regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:text="hello, please prepare design based on attached wire frame for Rate approval application."
+            android:textColor="@android:color/black" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cb_pass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:button="@drawable/like_selector"
+                    android:checked="true" />
+
+                <com.nikdemo.socialpostdesignui.utils.customui.CustomTextView
+                    app:fontName="@string/font_lato_bold"
+                    android:id="@+id/row_txt_like"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:text="102"
+                    android:textColor="@android:color/black" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:button="@drawable/ic_eye"
+                    android:buttonTint="@android:color/holo_purple" />
+
+                <com.nikdemo.socialpostdesignui.utils.customui.CustomTextView
+                    app:fontName="@string/font_lato_bold"
+                    android:id="@+id/row_txt_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:text="450"
+                    android:textColor="@android:color/black" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:button="@drawable/ic_comment"
+                    android:buttonTint="@android:color/holo_green_light" />
+
+                <com.nikdemo.socialpostdesignui.utils.customui.CustomTextView
+                    app:fontName="@string/font_lato_bold"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/row_txt_comment"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:text="55"
+                    android:textColor="@android:color/black" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_more" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

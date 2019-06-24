@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Social Post Design UI</string>
+
+    <string name="font_lato_regular">Lato-Regular.ttf</string>
+    <string name="font_lato_bold">Lato-Bold.ttf</string>
+    <string name="font_titillium_regular">Titillium-Regular.otf</string>
+    <string name="font_titillium_bold">Titillium-Bold.otf</string>
+
+</resources>
